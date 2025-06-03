@@ -2,20 +2,28 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8 -->
     <meta charset="UTF-8">
+
+    <!-- Título exibido na aba do navegador -->
     <title>Análise por Classe</title>
+
+    <!-- Importação do arquivo de estilos CSS -->
     <link rel="stylesheet" href="css_titanic/style_titanic.css">
 </head>
 
-<nav class="menu-navegacao">
-    <a href="index_titanic.html"><button>🏠 Início</button></a>
-    <a href="pagina1.html"><button>🧍 Sobreviventes</button></a>
-    <a href="pagina3.html"><button>💰 Análise Econômica</button></a>
-</nav>
-
 <body>
+    <!-- Navegação entre as páginas do projeto -->
+    <nav class="menu-navegacao">
+        <a href="index_titanic.html"><button>🏠 Início</button></a>
+        <a href="pagina1.html"><button>🧍 Sobreviventes</button></a>
+        <a href="pagina3.html"><button>💰 Análise Econômica</button></a>
+    </nav>
+
+    <!-- Título principal da página -->
     <h1>🎟️ Análise de Classes Sociais</h1>
 
+    <!-- Seção com tabela de dados por classe -->
     <section>
         <h2>Tabela Geral</h2>
         <table>
@@ -28,18 +36,20 @@
                 </tr>
             </thead>
             <tbody id="classe-tabela">
-                <!-- preenchido via JS -->
+                <!-- Este conteúdo será preenchido dinamicamente com JavaScript -->
             </tbody>
         </table>
     </section>
 
+    <!-- Seção com os passageiros mais jovens e mais velhos por classe -->
     <section>
         <h2>Passageiros Mais Jovens e Mais Velhos</h2>
         <ul id="extremos">
-            <!-- preenchido via JS -->
+            <!-- Este conteúdo será preenchido dinamicamente com JavaScript -->
         </ul>
     </section>
 
+    <!-- Scripts JavaScript para carregar e exibir os dados -->
     <script src="js_titanic/dados.js"></script>
     <script src="js_titanic/pagina2.js"></script>
 </body>
